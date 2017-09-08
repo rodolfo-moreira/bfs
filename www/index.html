@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Your app title -->
+    <title>BuffetSystem</title>
+    <!-- Path to Framework7 iOS CSS theme styles-->
+    <link rel="stylesheet" href="framework7/dist/css/framework7.ios.min.css">
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="framework7/dist/css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="framework7/dist/css/my-app.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style type="text/css">
+
+        .navbar-inner, .toolbar-inner{
+
+            background: -webkit-gradient(linear, center top, center bottom, from(#ED3237), to(#AC3335));
+            background-image: linear-gradient(#ED3237, #AC3335);
+
+        }
+
+        .tabbar-fixed .page-content, .tabbar-through .page-content, .toolbar-fixed .page-content, .toolbar-through .page-content{
+            background-color: #FFFBD6;
+        }
+
+        .material-icons{
+          color: #FFF;
+        }
+
+        .col-50 a{
+          color: #FFF;
+        }
+
+        .col-100 a{
+          color: #FFF;
+        }
+
+        .navbar .center{
+          color: #FFF;
+        }
+        .navbar a.link, .subnavbar a.link, .toolbar a.link{
+          color: #FFF;
+        }
+        .navbar a.link i+span{
+          margin-left: 0px !important;
+        }
+        .item-link i{
+          color: #ED3237 !important;
+        }
+
+    </style>
+  </head>
+  <body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        
+        <div class="row">
+
+          <div class="col-50" align="center">
+            <a href="index.html" class="close-panel">
+              <i class="material-icons">dashboard</i>
+              <br/>
+              <span>Dashboard</span>
+            </a>
+          </div>
+
+          <div class="col-50" align="center">
+            <a href="crm.html" class="close-panel">
+              <i class="material-icons">account_circle</i>
+              <br/>
+              <span>CRM</span>
+            </a>
+          </div>
+
+        </div>
+
+        <br/><br/>
+
+        <div class="row">
+
+          <div class="col-50" align="center">
+            <a href="lista-de-compras.html" class="close-panel">
+              <i class="material-icons">shopping_basket</i>
+              <br/>
+              <span>Lista de compras</span>
+            </a>
+          </div>
+
+          <div class="col-50" align="center">
+            <a href="materiais.html" class="close-panel">
+              <i class="material-icons">restaurant_menu</i>
+              <br/>
+              <span>Materiais</span>
+            </a>
+          </div>
+
+        </div>
+
+        <br/><br/>
+
+        <div class="row">
+
+          <div class="col-50" align="center">
+            <a href="produtos.html" class="close-panel">
+              <i class="material-icons">kitchen</i>
+              <br/>
+              <span>Produtos</span>
+            </a>
+          </div>
+
+          <div class="col-50" align="center">
+            <a href="logistica.html" class="close-panel">
+              <i class="material-icons">local_shipping</i>
+              <br/>
+              <span>Logística</span>
+            </a>
+          </div>
+
+        </div>
+
+        <br/><br/>
+
+        <div class="row">
+
+          <div class="col-50" align="center">
+            <a href="#" class="close-panel">
+              <i class="material-icons">description</i>
+              <br/>
+              <span>Avaliação de Funcionários</span>
+            </a>
+          </div>
+
+          <div class="col-50" align="center">
+            <a href="#" class="close-panel">
+              <i class="material-icons">done</i>
+              <br/>
+              <span>Procedimento de Festas</span>
+            </a>
+          </div>          
+
+        </div>
+
+        <br/><br/>
+
+        <div class="row">
+
+          <div class="col-100" align="center">
+            <a href="#" class="close-panel">
+              <i class="material-icons">close</i>
+              <br/>
+              <span>Fechar menu</span>
+            </a>
+
+          </div>
+
+               
+
+        </div>
+
+
+
+        
+        
+      </div>
+    </div>
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+
+            <div class="left"><i class="material-icons">power_settings_new</i></div>
+
+            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+            <div class="center sliding"><img src="img/logo.png" border="0" /></div>
+            <div class="right">
+              <a href="#" class="link icon-only open-panel"><i class="material-icons">menu</i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              <p>Dashboard</p>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <!-- Toolbar links -->
+            <!--<a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="framework7/dist/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="framework7/dist/js/my-app.js"></script>
+  </body>
+</html>  
