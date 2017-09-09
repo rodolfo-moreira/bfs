@@ -66,3 +66,15 @@ myApp.onPageInit('produtos', function (page) {
 myApp.onPageInit('logistica', function (page) {
    
 });
+
+myApp.onPageInit('tipoCliente', function (page) {
+   
+});
+
+myApp.onPageInit('pessoaFisica', function (page) {
+   
+});
+
+myApp.onPageInit('pessoaJuridica', function (page) {
+   
+});
